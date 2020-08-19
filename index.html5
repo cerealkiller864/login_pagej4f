@@ -40,7 +40,6 @@
     <article id = " - About Sololearn - ">
     <br/>
     <div id = "img_container">
-    <img alt ="" id ="img" src = "https://i.ytimg.com/vi/o8kT5c_4PAc/maxresdefault.jpg"/>
     </div>
     <div id = "paragraph">
     <p id = "article_content">...I've been working towards learning more about programming and coding languages outside of the classroom, because I want to stand out more when applying for jobs after college. One of my favorite ways to learn is through interactive apps, especially free ones, so I was excited to discover the SoloLearn app so I could develop my programming skills further. Here is my review of the free SoloLearn app for programming and coding in honor of Computer Science Education Week- read more about Computer Science Education Week and the Hour of Code here.
@@ -94,9 +93,6 @@
           
           "https://pbs.twimg.com/media/Dvg_e5fWwAAK7vL.jpg:large",
           
-      
-          "https://edtechbyod.files.wordpress.com/2016/04/sololearn.png?w=620",
-          
           "https://www.how2shout.com/wp-content/uploads/2019/11/SoloLearn-Learn-to-Code-for-Free.jpg",
           
           "https://missthoitrang.com/uploads/ab.jpg",
@@ -115,7 +111,7 @@
           
           "https://icdn.dantri.com.vn/zoom/1200_630/2018/9/16/jeffbezos-15370806645891685215341.jpg",
       ]
-      var img = document.getElementById('img')
+      var img = document.getElementById('img_container')
       var article = document.getElementById(' - About Sololearn - ')
       var h1_1 = document.getElementById('h1_1')
       var index = 0
@@ -145,7 +141,7 @@
           if (index > imgs.length) {
               index=0;
           }
-          img.src = imgs[index];
+          img_container.style.backgroundImage = "url(" + "'" + imgs[index] + "'" + ")";
       }
       setInterval(slide_show, 3000)
       
