@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>Noob login page</title>
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
+  </head>
+  <body>
+    <h1 onclick = "bottom()" id = "h1_1">Sololearn Login</h1>
+    <form id = "form" action = "https://www.sololearn.com">
+      <p>Please enter your <B><span class = "markup">Username, Email</span></B> and <B><span class= "markup">Password</span></B> </p>
+      <br/>
+      Email Address <input id = 'input1' type= "email" name = "email" list = "email_tags" placeholder = "email@example.com" autofocus required/>
+      <datalist id = "email_tags">
+        <option value = "@gmail.com">
+        <option value = "@yahoo.com">
+        <option value = "@yahoo.com.vn">
+        <option value = "@hotmail.com">
+      </datalist>
+      <br/>
+      Username <input id ='input2' type = "text" name = "username" placeholder = "declareVars_notWars" required/>
+      <br/>
+      Password <input id ='input3' type = "password" name = "password" placeholder = "Yur password" required/>
+      <br/><hr/>
+      <p>What's your <span class= "markup"><B>gender</B></span>?</p>
+      <input type= "radio" name= "gender" value= "male" required> Male
+      <br/>
+      <input type= "radio" name= "gender" value= "female" required> Female
+      <br/>
+      <input type= "radio" name= "gender" value="other" required> Other
+      <br/>
+      <input type= "radio" name= "gender" value= "no!" required> Rather not tell
+      <br/><br/><hr/>
+      <label for = "message">Leave a <B><span class = "markup">message</span></B><span class = "small_markup">(optional)</span></label><br/>
+      <textarea id = 'input4' id = "message" name= "message" placeholder = "I was so young when I was born"></textarea>
+      <br/><hr/>
+      <input id = 'input5' type = "submit" name = "submit" onclick = 'thumbsup2()'>
+    </form>
+    <br/><br/>
+    <h1 onclick = "bottom()" id = "aboutsololearn"> - About Sololearn - </h1>
+    <article id = " - About Sololearn - ">
+    <br/>
+    <div id = "img_container">
+    <img alt ="" id ="img" src = "https://i.ytimg.com/vi/o8kT5c_4PAc/maxresdefault.jpg"/>
+    </div>
+    <div id = "paragraph">
+    <p id = "article_content">...I've been working towards learning more about programming and coding languages outside of the classroom, because I want to stand out more when applying for jobs after college. One of my favorite ways to learn is through interactive apps, especially free ones, so I was excited to discover the SoloLearn app so I could develop my programming skills further. Here is my review of the free SoloLearn app for programming and coding in honor of Computer Science Education Week- read more about Computer Science Education Week and the Hour of Code here.
+    What is SoloLearn?
+    SoloLearn is a series of free apps that allows users to learn a variety of programming languages and concepts through short lessons, code challenges, and quizzes. Lessons are written with the beginner in mind, so anyone can learn to read and write their own code. SoloLearn is available for free download for iOS on the App Store here and for Android on Google Play here. SoloLearn courses can also be accessed online here.
+    <span>
+    Available languages
+    SoloLearn has lessons for the following programming languages and concepts. Users can take as many lessons as they want for free.
+    Web development (HTML5, CSS3, JavaScript, JQuery)
+    Python
+    Java
+    Kotlin
+    C++
+    C
+    C#
+    PHP
+    SQL
+    Algorithms and data structures
+    Ruby
+    Machine learning
+    Design Patterns
+    Swift
+    Git...
+    </span>
+    </p>
+    </div>
+    <em id = "full_post"><span class = "small_markup">Check out full article</span><span class = "small_markup"><a target = "_blank" onclick = "thumbsup()" href = "https://www.perkinselearning.org/technology/blog/sololearn-programming-app-review"> here</a></span>  
+    </em> 
+    </article>
+    <br/><hr/><br/>
+    <nav>
+    <div id = "menu"><a>Visual Themes</a>
+    <div id = "dropdown">
+    <a onclick = "dark()" href = "#" id = "dark">dark</a>
+    <a onclick = "light()" href = "#" id = "light">light</a>
+    <a onclick = "default_mode()" href = "#" id = "default">default</a>
+    </div>
+    </div>
+    </nav>
+    <script>
+      var imgs = [
+       "https://botayit.com/wp-content/uploads/2019/11/SoloLearn-Learn-to-Code-Premium-1140x694.jpg",
+          
+          "https://i.ytimg.com/vi/o8kT5c_4PAc/maxresdefault.jpg",
+          
+          "https://pbs.twimg.com/media/Dvg_e5fWwAAK7vL.jpg:large",
+          
+          "https://pbs.twimg.com/media/Dvg_e5fWwAAK7vL.jpg:large",
+          
+          "https://pbs.twimg.com/media/Dvg_e5fWwAAK7vL.jpg:large",
+          
+          "https://pbs.twimg.com/media/Dvg_e5fWwAAK7vL.jpg:large",
+          
+      
+          "https://edtechbyod.files.wordpress.com/2016/04/sololearn.png?w=620",
+          
+          "https://www.how2shout.com/wp-content/uploads/2019/11/SoloLearn-Learn-to-Code-for-Free.jpg",
+          
+          "https://missthoitrang.com/uploads/ab.jpg",
+          
+          "https://miro.medium.com/max/12032/0*__5nhm_2qHSrTVoZ",
+          
+          "https://www.techsignin.com/wp-content/uploads/2018/01/linux-linus-torvalds-su-co-chip-cpu-intel-meltdown-spectre3.jpg",
+          
+          "https://cms.qz.com/wp-content/uploads/2019/05/TimBLOfficial-5-e1562855311586.jpg?quality=75&strip=all&w=1600&h=900&crop=1",
+          
+          "https://st.quantrimang.com/photos/image/2019/06/06/steve-jobs-va-bi-quyet-dat-duoc-muc-tieu-da-de-ra640-size-640x335-znd.jpg",
+          
+          "https://s.marketwatch.com/public/resources/images/MW-IE117_gates__ZH_20200409090409.jpg",
+          
+          "https://luxury-inside.vn/data/uploads/2019/09/elon-musk-2-e1568721330744.jpg",
+          
+          "https://icdn.dantri.com.vn/zoom/1200_630/2018/9/16/jeffbezos-15370806645891685215341.jpg",
+      ]
+      var img = document.getElementById('img')
+      var article = document.getElementById(' - About Sololearn - ')
+      var h1_1 = document.getElementById('h1_1')
+      var index = 0
+      var mode = 0
+      
+      function bottom() {
+          window.scroll({
+              top:2500,
+              left:0,
+              behavior: 'smooth',
+          })
+      }
+      
+      function blink() {
+          if (mode == 0) {
+              h1_1.innerHTML = "Tap me !";
+              mode++;
+          } else {
+              h1_1.innerHTML = "Sololearn Login !"
+              mode = 0;
+          }
+      }
+      setInterval(blink, 3000)
+      
+      function slide_show() {
+          index++;
+          if (index > imgs.length) {
+              index=0;
+          }
+          img.src = imgs[index];
+      }
+      setInterval(slide_show, 3000)
+      
+      function thumbsup() {
+          alert('One single thumb_up means the world to me :3');
+          confirm("Directing to 'https://www.perkinselearning.org/technology/blog/sololearn-programming-app-review' via new tab, sure you wanna leave this page?");
+      }
+      
+      function thumbsup2() {
+          alert('One single thumb_up means the world to me :3');
+          confirm("Directing to 'https://www.sololearn.com' via new tab, sure you wanna leave this page?");
+      }             
+      
+      function dark() {
+          document.body.style.background = '#222222';
+          article.style.background = '#3D3D3D';
+          article.style.color = '#EBEBE8';
+          window.scroll({
+              top:0,
+              left:0,
+              behavior: 'smooth',  
+          })
+          h1_1.innerHTML = "Sololearn Login";
+      }
+              
+      function light() {
+          document.body.style.background = '#EBEBE8';
+          article.style.background = 'white';
+          article.style.color = 'black';
+          window.scroll({
+              top:0,
+              left:0,
+              behavior: 'smooth',  
+          })
+          h1_1.innerHTML = "Sololearn Login";
+      }
+      
+      function default_mode() {
+          document.body.style.backgroundImage = "url('http://www.sololearn.com/images/bg2.jpg')";
+          article.style.background = 'white';
+          article.style.color = 'black';
+      }
+    </script>
+  </body>
+</html>

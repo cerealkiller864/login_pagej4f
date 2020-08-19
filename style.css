@@ -1,0 +1,177 @@
+html {
+    scroll-behavior:smooth;
+}
+body {
+    background:url("http://www.sololearn.com/images/bg2.jpg");
+}
+button {
+    width:100%;
+    border:3px solid #DF9965;
+    background-color:white;
+}
+h1 {
+    text-align:center;
+    display:block;
+    color:#DF9965;
+    font-size:30px;
+    border: 4px solid #5F7425D9;
+    border-radius:9px;
+    margin:10px;
+    top:5px;
+    font-family: Impact , Charcoal, sans-serif;
+    text-shadow: 4px 3px 5px grey;
+    box-shadow:
+    inset 1px 1px 3px 1px #5F7425;
+}
+form {
+    background-color:#5F7425;
+    display:block;
+    padding:10px 5% 5% 10px;
+    margin:5px;
+    text-align:left;
+    border:3px solid #cecece;
+    border-radius:15px;
+    font-family: Impact, Charcoal, sans-serif;
+    box-shadow:inset 1px 1px 3px 1px #5F7425;
+    box-shadow:inset -1px -1px 3px 1px #5F7425;
+}
+.markup {
+    font-size:30px;
+    color:#DF9965;
+    text-decoration:underline;
+}
+
+.small_markup {
+    font-size:20px;
+}
+article a {
+    cursor:crosshair;
+}
+article a:link {
+    color:#DF9965;
+    text-decoration:underline;
+}
+article a:visited {
+    color:brown;
+    text-decoration:line-through ;
+}
+article a:hover {
+    color:orange;
+    text-transform:uppercase;
+    text-decoration:underline;
+}
+input[type = text], input[type = password], input[type = email] {
+    font-style:italic;
+    width:75%;
+    margin:10px;
+    padding:5px; 
+    border:2px solid #67737F;
+    border-radius:15px;
+    align:left;
+}
+input[type = radio] {
+    margin:5px;
+    padding:5px;
+}
+input[type = submit] {
+    width:100%;
+    border:2px solid grey;
+    border-radius:10px;
+    text-decoration:bolder;
+    text-transform:uppercase;
+    color:#222222;
+}
+textarea {
+    font-style:italic;
+    width:80%;
+    margin:20px 20px 10px 20px;
+    padding:10px; 
+    border:3px solid #67737F;
+    background-color:#efefef;
+    color:#787575;
+    outline:none;
+    border-radius:20px;
+}
+#img_container {
+    display:block;
+    height:200px;
+    width:100%;
+    overflow:hidden;
+}
+img {
+    width:100%;
+    max-height:100%;
+}
+#aboutsololearn {
+    position:sticky;
+}
+article {
+    font-style:oblique;
+    position:static;
+    background-color:white;
+    display:block;
+    margin:10px;
+    padding:5px; 
+    border:2px solid #5F7425;
+    color:#787575;
+    border-radius:10px;
+    box-shadow:
+    inset 1px 1px 3px 1px #5F7425,
+    inset -1px -1px 3px 1px #5F7425;
+}
+#paragraph {
+    height:75%;
+    width:100%;
+    word-wrap:break-word;
+    overflow:auto;
+}
+#paragraph span:first-child {
+    white-space:pre-wrap;
+}
+#paragraph p::first-line {
+    font-size:30px;
+    color:#DF9965;
+}
+#paragraph p::selection {
+    color:#DF9965;
+}
+#menu {
+    position:relative;
+    text-align:center;
+    background-color:#222222;
+    border:3px dashed #5F7425;
+    box-shadow:7px 5px 3px 1px #5F7425;
+    border-radius:10%;
+    font-family:  Impact , Charcoal, sans-serif;
+    color:#EBEBE8;
+}
+#menu:hover {
+    background-color:#6A6932;
+}
+#light, #dark, #default {
+    display:block;
+    text-decoration:none;
+    text-transform:uppercase;
+    color:#fff;
+    padding:15px;
+}
+dropdown {
+    top:48px;
+    position:absolute;
+    width:inherit;
+    background-color:#474A46;
+    box-shadow:inset 1px 1px 3px 1px black;
+}
+#dropdown a:hover {
+    box-shadow:inset 1px 1px 3px 1px black;
+    background-color:#D2B48C;
+}
+#menu:nth-child(1) {
+    width:120px;
+}
+#menu:nth-child(2) {
+    width:120px;
+}
+#menu:nth-child(3) {
+    width:120px;
+}
