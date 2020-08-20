@@ -34,6 +34,7 @@ form {
     font-family: Impact, Charcoal, sans-serif;
     box-shadow:inset 1px 1px 3px 1px #5F7425;
     box-shadow:inset -1px -1px 3px 1px #5F7425;
+    filter:opacity(0.9);
 }
 .markup {
     font-size:30px;
@@ -122,6 +123,7 @@ article {
     width:100%;
     word-wrap:break-word;
     overflow:auto;
+    filter:opacity(0.7);
 }
 #paragraph span:first-child {
     white-space:pre-wrap;
