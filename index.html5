@@ -125,7 +125,7 @@
           })
       }
       
-      function blink() {
+      setInterval(function blink() {
           if (mode == 0) {
               h1_1.innerHTML = "Tap me !";
               mode++;
@@ -133,17 +133,16 @@
               h1_1.innerHTML = "Sololearn Login !"
               mode = 0;
           }
-      }
-      setInterval(blink, 3000)
+      }, 3000)
       
-      function slide_show() {
+        
+      setInterval(function slide_show() {
           index++;
           if (index > imgs.length) {
               index=0;
           }
-          img_container.style.backgroundImage = "url(" + "'" + imgs[index] + "'" + ")";
-      }
-      setInterval(slide_show, 3000)
+          img_container.style.backgroundImage = `url('${imgs[index]}'), url('http://www.sololearn.com/uploads/css_logo.png');`;
+      }, 3000)
       
       function thumbsup() {
           alert('One single thumb_up means the world to me :3');
