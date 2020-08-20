@@ -45,7 +45,7 @@ function bottom() {
 }
 
 setInterval(function blink() {
-    if (mode == 0) {
+    if (mode === 0) {
         h1_1.innerHTML = "Tap me !";
         mode++;
     } else {
