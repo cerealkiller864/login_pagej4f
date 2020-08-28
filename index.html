@@ -2,6 +2,7 @@
 <html lang="en">
    <head>
       <title>Noob login page</title>
+      <meta charset="UTF-8">
       <style>
          html {
          scroll-behavior:smooth;
@@ -306,7 +307,8 @@
       </div>
       </div>
       </nav>
-      <script>alert("check out the dark theme at the bottom of page:v")
+      <script>
+         alert("check out the dark theme at the bottom of page:v")
          var imgs = [
              "https://botayit.com/wp-content/uploads/2019/11/SoloLearn-Learn-to-Code-Premium-1140x694.jpg",
          
@@ -363,23 +365,13 @@
          }, 3000)
          
          
-         setInterval(function slide_show() {
+         function slide_show() {
+             imgUrls = `url('${imgs[index]}')`;
+             $('#img_container').css('background-image', imgUrls);
              index++;
-             if (index > imgs.length) {
-                 index = 0;
-             }
-             img_container.style.backgroundImage = `url('${imgs[index]}'), url('http://www.sololearn.com/uploads/css_logo.png');`;
-         }, 3000)
-         
-         function thumbsup() {
-             alert('One single thumb_up means the world to me :3');
-             confirm("Directing to 'https://www.perkinselearning.org/technology/blog/sololearn-programming-app-review' via new tab, sure you wanna leave this page?");
+             if (index >= imgs.lenth) {index = 0;} 
          }
-         
-         function thumbsup2() {
-             alert('One single thumb_up means the world to me :3');
-             confirm("Directing to 'https://www.sololearn.com' via new tab, sure you wanna leave this page?");
-         }
+         setInterval(slide_show, 3000)
          
          function dark() {
              document.body.style.background = '#222222';
