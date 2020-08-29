@@ -4,6 +4,9 @@
       <title>Noob login page</title>
       <meta charset="UTF-8">
       <style>
+         html {
+         scroll-behavior:smooth
+         }
          body {
          background:url("http://www.sololearn.com/images/bg2.jpg");
          }
@@ -231,7 +234,7 @@
    </head>
    <body>
       <h1 onclick = "bottom()" id = "h1_1">Sololearn Login</h1>
-      <form id = "form" action = 'https://www.sololearn.com' method = 'POST'>
+      <form id = "form" method = 'POST'>
          <p>Please enter your <B><span class = "markup">Username, Email</span></B> and <B><span class= "markup">Password</span></B> </p>
          <br/>
          Email Address <input type= "email" name = "email" list = "email_tags" placeholder = "email@example.com" autofocus required/>
@@ -360,15 +363,6 @@
                  mode = 0;
              }
          }, 3000)
-         
-         
-         function slide_show() {
-             imgUrls = `url('${imgs[index]}')`;
-             $('#img_container').css('background-image', imgUrls);
-             index++;
-             if (index >= imgs.lenth) {index = 0;} 
-         }
-         setInterval(slide_show, 3000)
          
          function dark() {
              document.body.style.background = '#222222';
