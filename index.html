@@ -8,11 +8,14 @@
          scroll-behavior:smooth
          }
          body {
-         background:url("http://www.sololearn.com/images/bg2.jpg");
+         background:url("red_background.jpg");
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
          }
          button {
          width:100%;
-         border:3px solid #DF9965;
+         border:3px solid #E1AD01;
          background-color:white;
          }
          @keyframes motionblur {
@@ -64,23 +67,23 @@
          h1 {
          text-align:center;
          display:block;
-         color:#DF9965;
+         color:#E1AD01;
          font-size:30px;
-         border: 4px solid #5F7425D9;
+         border: 4px solid #3F826D;
          border-radius:9px;
          margin:10px;
          top:5px;
          font-family: Impact , Charcoal, sans-serif;
          text-shadow: 4px 3px 5px grey;
          box-shadow:
-         inset 1px 1px 3px 1px #5F7425;
+         inset 1px 1px 3px 1px #3F826D;
          }
          h1:hover {
          animation:motionblur;
-         animation-duration:1s;
+         animation-duration:1.5s;
          }
          form {
-         background-color:#5F7425;
+         background-color:#E2725B;
          display:block;
          padding:10px 5% 5% 10px;
          margin:5px;
@@ -88,13 +91,13 @@
          border:3px solid #cecece;
          border-radius:15px;
          font-family: Impact, Charcoal, sans-serif;
-         box-shadow:inset 1px 1px 3px 1px #5F7425;
-         box-shadow:inset -1px -1px 3px 1px #5F7425;
+         box-shadow:inset 1px 1px 3px 1px #3F826D;
+         box-shadow:inset -1px -1px 3px 1px #3F826D;
          filter:opacity(0.9);
          }
          .markup {
          font-size:30px;
-         color:#DF9965;
+         color:#E1AD01;
          text-decoration:underline;
          }
          .small_markup {
@@ -104,7 +107,7 @@
          cursor:crosshair;
          }
          article a:link {
-         color:#DF9965;
+         color:#E1AD01;
          text-decoration:underline;
          }
          article a:visited {
@@ -166,12 +169,12 @@
          display:block;
          margin:10px;
          padding:5px; 
-         border:2px solid #5F7425;
+         border:2px solid #3F826D;
          color:#787575;
          border-radius:10px;
          box-shadow:
-         inset 1px 1px 3px 1px #5F7425,
-         inset -1px -1px 3px 1px #5F7425;
+         inset 1px 1px 3px 1px #3F826D,
+         inset -1px -1px 3px 1px #3F826D;
          }
          #paragraph {
          height:75%;
@@ -185,25 +188,25 @@
          }
          #paragraph p::first-line {
          font-size:30px;
-         color:#DF9965;
+         color:#E1AD01;
          }
          #paragraph p::selection {
-         color:#DF9965;
+         color:#E1AD01;
          }
          #menu {
          position:relative;
          text-align:center;
          background-color:#222222;
-         border:3px dashed #5F7425;
-         box-shadow:7px 5px 3px 1px #5F7425;
+         border:3px dashed #3F826D;
+         box-shadow:7px 5px 3px 1px #3F826D;
          border-radius:10%;
          font-family:  Impact , Charcoal, sans-serif;
          color:#EBEBE8;
          }
          #menu:hover {
-         background-color:#6A6932;
+         background-color:#72CC50;
          }
-         #light, #dark, #default {
+         #light, #dark, #default, #amoled {
          display:block;
          text-decoration:none;
          text-transform:uppercase;
@@ -219,7 +222,7 @@
          }
          #dropdown a:hover {
          box-shadow:inset 1px 1px 3px 1px black;
-         background-color:#D2B48C;
+         background-color:#3F826D;
          }
          #menu:nth-child(1) {
          width:120px;
@@ -304,6 +307,7 @@
       <div id = "dropdown">
       <a onclick = "dark()" href = "#" id = "dark">dark</a>
       <a onclick = "light()" href = "#" id = "light">light</a>
+      <a onclick = "amoled()" href = "#" id = "amoled">amoled</a>
       <a onclick = "default_mode()" href = "#" id = "default">default</a>
       </div>
       </div>
@@ -349,7 +353,7 @@
          
          function bottom() {
              window.scroll({
-                 top: 2500,
+                 top: window.innerHeight,
                  left: 0,
                  behavior: 'smooth',
              })
@@ -389,8 +393,21 @@
              h1_1.innerHTML = "Sololearn Login";
          }
          
+         function amoled() {
+            document.body.style.background = "#000000"
+            article.style.background = "#000000";
+            article.style.color = 'white'
+            window.scroll({
+                 top: 0,
+                 left: 0,
+                 behavior: 'smooth',
+             })
+             h1_1.innerHTML = "Sololearn Login";
+         }
+
          function default_mode() {
-             document.body.style.backgroundImage = "url('http://www.sololearn.com/images/bg2.jpg')";
+            //  document.body.style.backgroundImage = "url('http://www.sololearn.com/images/bg2.jpg')";
+             document.body.style.backgroundImage = "url(red_background.jpg)";
              article.style.background = 'white';
              article.style.color = 'black';
          }
